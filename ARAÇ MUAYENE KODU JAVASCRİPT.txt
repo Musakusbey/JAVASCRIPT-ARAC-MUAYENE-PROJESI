@@ -1,0 +1,28 @@
+//GİTHUBA EKLENECEK 1.KOD 
+//ARAC MUAYENE KONTROL KODUNU YAZINIZ.
+
+var trafigecıkıs=new Date('04/20/2016');
+var trafiktekiMs=Date.now-trafigecıkıs.getTime;
+
+var trafıktekıgun=Math.floor(trafiktekiMs/24);
+
+if(trafıktekıgun<=365)
+{
+    console.log("servis bakım süreniz geldi");
+}
+
+else if(trafıktekıgun>365 && trafıktekıgun<=365*2)
+{
+    console.log("2.servis bakım  süreniz gelmiştir");
+}
+
+else if(trafıktekıgun>365*2 && trafıktekıgun<=365*2)
+{
+    console.log("3.servis bakım süreniz gelmiştir");
+}
+
+else
+{
+    console.log("bilinmeyen süre");
+
+}
